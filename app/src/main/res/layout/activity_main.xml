@@ -33,12 +33,21 @@
 
         <Button
             android:id="@+id/sendIntent"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="207dp"
             android:text="Intent" />
+
+        <Button
+            android:id="@+id/inplicitIntent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="146dp"
+            android:text="share to other application" />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

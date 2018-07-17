@@ -8,9 +8,13 @@
     tools:context=".SecondActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/textIntent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Activity 2" />
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#882205"
+        android:textAlignment="center"
+        android:text="test" />
 </LinearLayout>

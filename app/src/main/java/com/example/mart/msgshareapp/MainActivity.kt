@@ -26,8 +26,18 @@ class MainActivity : AppCompatActivity() {
 //            Toast.makeText(this,message,Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("text1",message)
             startActivity(intent)
 
+        }
+
+        inplicitIntent.setOnClickListener {
+            var message: String = editText.text.toString()
+            val intent = Intent()
+            intent.action = Intent.ACTION_SEND
+            intent.putExtra(Intent.EXTRA_TEXT,message)
+            intent.type = "text/plain"
+            startActivity(Intent.createChooser(intent, "Select application : "))
         }
     }
 }
