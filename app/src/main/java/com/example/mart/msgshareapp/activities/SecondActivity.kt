@@ -1,7 +1,8 @@
-package com.example.mart.msgshareapp
+package com.example.mart.msgshareapp.activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.mart.msgshareapp.R
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
@@ -10,9 +11,13 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        val bundle: Bundle = intent.extras
-        var msg: String? = bundle.getString("text1")
+        val bundle: Bundle? = intent.extras
 
-        textIntent.text = msg
+        //If null don't excute below step
+        bundle?.let {
+            var msg: String? = bundle.getString("text1")
+            textIntent.text = msg
+        }
+
     }
 }
