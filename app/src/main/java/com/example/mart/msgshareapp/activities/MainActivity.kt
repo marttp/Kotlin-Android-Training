@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         showToast1.setOnClickListener{
             //Code
             Log.i("MainActivity","Button was clicked!")
-            showToast("Button was clicked",Toast.LENGTH_LONG)
+            showToast(resources.getString(R.string.btn_click_message),Toast.LENGTH_LONG)
             //Move it to Extension
             //Toast.makeText(this,"Button was clicked",Toast.LENGTH_SHORT).show()
         }

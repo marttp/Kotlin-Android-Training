@@ -17,7 +17,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="63dp"
-            android:text="Show Toast" />
+            android:text="@string/show_toast" />
 
         <EditText
             android:id="@+id/editText"

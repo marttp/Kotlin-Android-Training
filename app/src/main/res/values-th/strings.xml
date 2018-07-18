@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="show_toast">แสดงโท๊ส</string>
+    <string name="btn_click_message">ปุ่มถูกกด</string>
+
+</resources>
